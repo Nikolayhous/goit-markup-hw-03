@@ -56,7 +56,7 @@ img {
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -80,7 +80,7 @@ img {
 }
 
 .logo-text-two:hover,
-.logo-text-two:hover {
+.logo-text-two:focus {
   color: var(--button-hover-color);
 }
 
@@ -297,6 +297,11 @@ margin-right: 30px;
 
 .footer .logo-text-two {
   color: var(--title-footer-color);
+}
+
+.footer .logo-text-two:hover,
+.footer .logo-text-two:focus {
+  color: var(--button-hover-color);
 }
 
 .address-items {
