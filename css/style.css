@@ -31,9 +31,13 @@ p {
 
 .container {
   width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.header {
+.container.header {
   display: flex;
   align-items: center;
 }
@@ -43,10 +47,14 @@ p {
   align-items: center;
 }
 
-.header .logo {
-  display: inline;
+.logo {
+  display: block;
   text-decoration: none;
-  padding: 24px 93px 25px 15px;
+  /* padding: 24px 93px 25px 15px; */
+  padding-top: 24px;
+  padding-bottom: 25px;
+  /* margin-left: 15px; */
+  margin-right: 93px;
 }
 
 .logo-text-one {
@@ -75,16 +83,19 @@ p {
   list-style: none;
 }
 
-.nav-item {
-  padding: 32px 50px 32px 0;
+.nav-item:not(:last-child) {
+ margin-right: 50px;
 }
 
 .nav-items .link {
+  display: block;
   color: var(--title-nav-filter-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-items .link:hover,
@@ -98,11 +109,20 @@ p {
 
 .auth-nav {
   display: flex;
-  justify-content: flex-end;
   list-style: none;
+  /* margin-left: 331px; */
+  margin-left: auto;
 }
 
+.auth-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
 .auth-nav .contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--text-link-color);
   font-weight: 500;
   line-height: 1.14;
@@ -136,13 +156,13 @@ p {
 .main .button {
   background-color: var(--button-hover-color);
   color: #ffffff;
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.06em;
-
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .main .button:hover,
@@ -157,11 +177,12 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 94px 0;
   list-style: none;
 }
 
-.about-item {
-  padding: 94px 15px;
+.about-item:not(:last-child) {
+margin-right: 30px;
 }
 
 .about-title {
@@ -181,6 +202,7 @@ p {
 
 
 .work-title {
+  margin-bottom: 50px;
   color: var(--title-nav-filter-color);
   font-size: 36px;
   line-height: 1.16;
@@ -192,10 +214,11 @@ p {
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
+  padding-bottom: 94px; 
 }
 
-.work-item {
-  padding: 50px 15px 94px;
+.work-item:not(:last-child) {
+margin-right: 30px;
 }
 
 /* sectiom team */
@@ -216,7 +239,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   padding-bottom: 94px;
   list-style: none;
   
@@ -255,10 +278,10 @@ p {
   padding: 60px 0;
 }
 
-.footer .logo {
+.footer-logo {
   display: inline-block;
   text-decoration: none;
-  padding: 0 0 20px 15px;
+  padding-bottom: 20px;
 }
 
 .footer .logo-text-two {
@@ -270,7 +293,7 @@ p {
 }
 
 .address-item {
-  padding: 0 0 9px 15px;
+  padding-bottom: 9px;
 }
 
 .address-items .map {
@@ -309,8 +332,8 @@ p {
   padding: 94px 0 50px;
 }
 
-.filter-item {
-  margin: 0 8px;
+.filter-item:not(:last-child) {
+  margin-right: 8px;
   text-align: center;
   
 }
@@ -339,14 +362,15 @@ p {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
   padding-bottom: 94px;
 }
 
 .projects-item {
+  margin-right: 30px;
+  margin-top: 30px;
   border: 1px solid #eeeeee;
-  margin: 15px;
+ 
 }
 
 .project-title {
