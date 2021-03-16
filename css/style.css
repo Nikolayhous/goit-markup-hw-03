@@ -1,3 +1,5 @@
+
+
 /* переменные css */
 
 :root {
@@ -27,6 +29,12 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* styles header */
 
 .container {
@@ -50,10 +58,8 @@ p {
 .logo {
   display: block;
   text-decoration: none;
-  /* padding: 24px 93px 25px 15px; */
   padding-top: 24px;
   padding-bottom: 25px;
-  /* margin-left: 15px; */
   margin-right: 93px;
 }
 
@@ -110,7 +116,6 @@ p {
 .auth-nav {
   display: flex;
   list-style: none;
-  /* margin-left: 331px; */
   margin-left: auto;
 }
 
@@ -138,8 +143,15 @@ p {
 /* section main */
 .main {
   background-color: var(--dark-bg-color);
-  text-align: center;
-  padding-bottom: 200px;
+}
+
+.container.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 }
 
 .main-title {
@@ -149,8 +161,8 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  padding: 200px 260px 0;
+  padding: 0 250px 30px;
+  text-align: center;
 }
 
 .main .button {
@@ -239,7 +251,6 @@ margin-right: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding: 0 15px; */
   padding-bottom: 94px;
   list-style: none;
   
@@ -362,15 +373,18 @@ margin-right: 30px;
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   padding-bottom: 94px;
 }
 
 .projects-item {
-  margin-right: 30px;
   margin-top: 30px;
   border: 1px solid #eeeeee;
- 
+}
+
+.projects-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .project-title {
