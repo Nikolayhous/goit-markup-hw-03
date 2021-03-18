@@ -38,7 +38,7 @@ img {
 /* styles header */
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -392,15 +392,16 @@ margin-right: 30px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-top: -30px; 
   margin-left: -30px;
-  margin-top: -30px;
 }
 
 .projects-item {
+  margin-top: 30px; 
   margin-left: 30px;
-  margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
+
 
 .aside {
   padding: 20px 24px;
