@@ -10,6 +10,7 @@
   --portfolio-bg-filter-color: #f5f4fa;
   --hover-focus-color: #ffffff;
   --title-footer-color: #ffffff;
+  --flex-basis-item: 3;
 }
 
 body {
@@ -24,6 +25,7 @@ ul,
 h1,
 h2,
 h3,
+h4,
 p {
   padding: 0;
   margin: 0;
@@ -56,7 +58,6 @@ header {
 
 .header-nav {
   display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -145,31 +146,31 @@ header {
 }
 
 /* section main */
-.main {
+.hero {
   background-color: var(--dark-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.container.mains {
+.container.heros {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-title {
+.hero-title {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 0 250px;
+  max-width: 696px;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.main .button {
+.hero .button {
   background-color: var(--button-hover-color);
   color: #ffffff;
   padding: 10px 32px;
@@ -182,8 +183,8 @@ header {
   border-radius: 4px;
 }
 
-.main .button:hover,
-.main .button:focus {
+.hero .button:hover,
+.hero .button:focus {
   background-color: #188ce8;
   color: var(--hover-focus-color);
 }
@@ -317,7 +318,7 @@ margin-right: 30px;
 }
 
 .address-item {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .address-items .map {
@@ -399,16 +400,13 @@ margin-right: 30px;
 .projects-item {
   margin-top: 30px; 
   margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 30px * var(--flex-basis-item)) / var(--flex-basis-item));
 }
-
 
 .aside {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-}
-
-
+} 
 
 .project-title {
   color: var(--title-nav-filter-color);
