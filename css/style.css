@@ -301,7 +301,7 @@ margin-right: 30px;
 .footer-logo {
   display: inline-block;
   text-decoration: none;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer .logo-text-two {
@@ -314,12 +314,14 @@ margin-right: 30px;
 }
 
 .address-items {
+  display: inline-block;
   list-style: none;
 }
 
-.address-item {
+.address-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 
 .address-items .map {
   color: var(--title-footer-color);
