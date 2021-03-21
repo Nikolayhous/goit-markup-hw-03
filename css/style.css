@@ -95,7 +95,7 @@ header {
 }
 
 .nav-item:not(:last-child) {
- margin-right: 50px;
+  margin-right: 50px;
 }
 
 .nav-items .link {
@@ -152,12 +152,6 @@ header {
   padding-bottom: 200px;
 }
 
-.container.heros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .hero-title {
   color: #ffffff;
   font-weight: 900;
@@ -165,12 +159,15 @@ header {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
-  margin-bottom: 30px;
   text-align: center;
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;  
 }
 
-.hero .button {
+.hero-button {
+  display: block;
   background-color: var(--button-hover-color);
   color: #ffffff;
   padding: 10px 32px;
@@ -181,6 +178,8 @@ header {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero .button:hover,
@@ -272,6 +271,11 @@ header {
   margin-left: -30px;
 }
 
+.team-subtext  {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-item {
   background-color: #ffffff;
   text-align: center;
@@ -283,9 +287,6 @@ header {
   flex-basis: calc((100% - 120px) / 4);
 }
 
-.team-photo {
-  margin-bottom: 30px;
-}
 
 .team-collaborator {
   color: var(--title-nav-filter-color);
